@@ -1,0 +1,7 @@
+# Add deploy stage if not already defined
+stages:
+  - deploy
+include:
+  - project: natwestgroup/RBSI/Technology/eQPlatform/eQPlatformEngineering/eq-automation/eq-eng-gitlab-central-pipelines
+    ref: 5.1.0
+    file: /pipelines/confluence_update_pipeline_job.yaml
